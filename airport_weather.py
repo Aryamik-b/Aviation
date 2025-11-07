@@ -1,14 +1,10 @@
-# -*- coding: utf-8 -*-
-# Aviation Weather Fetcher (OpenWeatherMap) – enter ICAO (e.g., VECC)
-
 import requests
 
-# 🔑 Put your OpenWeatherMap API key here
+
 API_KEY = "e6fe993d26b90f301d11b3ead4d19d58"
 
-# Clean ICAO -> City mapping (India + a few big international hubs)
+
 airport_city = {
-    # --- India (major) ---
     "VECC": "Kolkata",
     "VIDP": "New Delhi",
     "VABB": "Mumbai",
@@ -63,7 +59,6 @@ airport_city = {
     "VOHB": "Hubballi",
     "VEBD": "Bagdogra",
     "VEPY": "Pakyong",
-    # --- International hubs (handy for testing) ---
     "OMDB": "Dubai",
     "OTHH": "Doha",
     "EGLL": "London",
